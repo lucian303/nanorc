@@ -1,9 +1,8 @@
-syntax "ini" "\.(desktop|ini|override|repo)$" "gitconfig$"
+syntax "ini" "\.(ini|desktop|override)$" "mimeapps\.list$"
 
-OPERATOR: "[=;]" "\[" "\]"
 +BOOLEAN
-VARIABLE: "^\s*[^=]*="
-SECTION:  "^\[.*\]$"
++INI
+OPERATOR: "[=;]"
 +STRING
 +HASHCOMMENT
 +LINT
