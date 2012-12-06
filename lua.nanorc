@@ -3,8 +3,8 @@ header "^#!.*lua(jit)?$"
 
 FUNCTION: "[A-Za-z_][A-Za-z0-9_]*[[:space:]]*([({'"]|\[=*\[)"
 KEYWORD:  "\<(do|end|while|repeat|until|if|elseif|then|else)\>"
-KEYWORD:  "\<(for|in|function|local|return|break|nil)\>"
-+GOTO
+KEYWORD:  "\<(for|in|function|local|return|nil)\>"
+JUMP:     "\<(goto|break)\>"
 +BOOLEAN
 OPERATOR: "[-+:*/%^=#<>]|~=|\.\.|\[|\]|\<(not|and|or)\>"
 WARNING:  "[`!@$&|?]|!="

@@ -10,6 +10,17 @@ The syntax highlighting definitions that come bundled with nano are of
 pretty poor quality. This is an attempt at providing a good set of accurate
 syntax definitions to replace and expand the defaults.
 
+Screenshots:
+------------
+
+#### Editing HTML:
+
+![HTML Screenshot](http://craigbarnes.github.com/nanorc/HTML.png)
+
+#### Editing C:
+
+![C Screenshot](http://craigbarnes.github.com/nanorc/C.png)
+
 Installation
 ------------
 
@@ -53,11 +64,11 @@ names or [mixins], instead of hard-coded colors.
 
 For example, the following named rule:
 
-    KEYWORD: "\<(if|else|return)\>"
+    TYPE: "int|bool|string"
 
 becomes:
 
-    color green "\<(if|else|return)\>"
+    color green "int|bool|string"
 
 and the following "mixin":
 
