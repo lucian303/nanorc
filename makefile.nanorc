@@ -1,8 +1,9 @@
 syntax "makefile" "([Mm]akefile|\.ma?k)$"
 header "^#!.*/(env +)?[bg]?make( |$)"
 
-KEYWORD:  "\<(ifeq|ifdef|ifneq|ifndef|else|endif)\>|^override\>"
-SECTION:  "^[^   ]+:"
+KEYWORD:  "\<(ifeq|ifdef|ifneq|ifndef|else|endif)\>"
+KEYWORD:  "^(export|include|override)\>"
+SECTION:  "^[^:=	]+:"
 OPERATOR: "[=,%]" "\+=|\?=|:=|&&|\|\|"
 FUNCTION: "\$\((abspath|addprefix|addsuffix|and|basename|call|dir)[[:space:]]"
 FUNCTION: "\$\((error|eval|filter|filter-out|findstring|firstword)[[:space:]]"
